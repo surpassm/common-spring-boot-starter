@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.surpassm</groupId>
     <artifactId>common-spring-boot-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>common-spring-boot-starter</name>
     <description>通用工程类</description>
 
@@ -92,6 +92,11 @@
             <artifactId>jodconverter</artifactId>
             <version>2.2.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.10.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -130,9 +135,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/surpassm/config-spring-boot-starter</url>
-        <connection>scm:git:git@gitee.com:surpassm/config-spring-boot-starter.git</connection>
-        <developerConnection>scm:git:git@gitee.com:surpassm/config-spring-boot-starter.git</developerConnection>
+        <url>https://github.com/surpassm/common-spring-boot-starter</url>
+        <connection>scm:git:git@gitee.com:surpassm/common-spring-boot-starter.git</connection>
+        <developerConnection>scm:git:git@gitee.com:surpassm/common-spring-boot-starter.git</developerConnection>
     </scm>
     <developers>
         <developer>

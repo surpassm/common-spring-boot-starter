@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.surpassm</groupId>
     <artifactId>common-spring-boot-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>common-spring-boot-starter</name>
     <description>通用工程类</description>
 

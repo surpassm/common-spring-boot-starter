@@ -310,8 +310,10 @@ public class DateUtil {
 	public static Date addOneMonth(Date date) {
 		Calendar calendar = new GregorianCalendar();
 		calendar.setTime(date);
-		calendar.add(Calendar.MONTH, 1);//把日期往后增加一个月.整数往后推,负数往前移动
-		date = calendar.getTime();   //这个时间就是日期往后推一天的结果
+		//把日期往后增加一个月.整数往后推,负数往前移动
+		calendar.add(Calendar.MONTH, 1);
+		//这个时间就是日期往后推一天的结果
+		date = calendar.getTime();
 		return date;
 	}
 
@@ -471,6 +473,20 @@ public class DateUtil {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(date);
 		calendar.add(Calendar.DATE,day);
+		return calendar.getTime();
+	}
+
+	/**
+	 * 当前日期增加多少小时
+	 * @param hour s
+	 * @return s
+	 */
+	public static Date addOneHour(Integer hour) {
+		Calendar calendar = new GregorianCalendar();
+		calendar.setTime(new Date());
+		//把日期往后增加小时.整数往后推,负数往前移动
+		calendar.add(Calendar.HOUR, hour);
+		//这个时间就是日期往后推一天的结果
 		return calendar.getTime();
 	}
 }

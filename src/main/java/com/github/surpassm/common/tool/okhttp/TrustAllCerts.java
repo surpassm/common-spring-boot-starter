@@ -3,6 +3,9 @@ package com.github.surpassm.common.tool.okhttp;
 import javax.net.ssl.X509TrustManager;
 import java.security.cert.X509Certificate;
 
+/**
+ * @author Administrator
+ */
 public class TrustAllCerts implements X509TrustManager {
 
 

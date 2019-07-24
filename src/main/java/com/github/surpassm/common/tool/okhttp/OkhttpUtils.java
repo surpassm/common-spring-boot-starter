@@ -5,19 +5,25 @@ import okhttp3.*;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.io.IOException;
 import java.security.SecureRandom;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.List;
 import java.util.Map;
 
 
+/**
+ * @author Administrator
+ */
 public class OkhttpUtils {
 
     private  static OkHttpClient client;
 
     static {
         client = new OkHttpClient.Builder()
-                .sslSocketFactory(createSSLSocketFactory())
+                .sslSocketFactory(createSSLSocketFactory(),new TrustAllCerts())
                 .hostnameVerifier((hostname, session) -> true)
                 .build();
     }

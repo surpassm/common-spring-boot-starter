@@ -52,7 +52,8 @@ public class BytedecoJavacv {
         InputStreamReader isr = new InputStreamReader(stderr);
         BufferedReader br = new BufferedReader(isr);
         String line;
-        while ((line = br.readLine()) != null);
+        while ((line = br.readLine()) != null) {
+		}
         process.waitFor();
         if(br != null){
             br.close();

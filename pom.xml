@@ -12,7 +12,7 @@
         <java.version>1.8</java.version>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <spring-webmvc.vsersion>5.1.8.RELEASE</spring-webmvc.vsersion>
-        <tomcat-embed-core.vsersion>9.0.21</tomcat-embed-core.vsersion>
+        <tomcat-embed-core.vsersion>9.0.41</tomcat-embed-core.vsersion>
         <lombok.version>1.18.8</lombok.version>
         <jackson-databind.version>2.9.9</jackson-databind.version>
         <guava.version>2.6.2</guava.version>
